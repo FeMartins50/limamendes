@@ -27,8 +27,8 @@
             <p class="thColumn">{event.time}</p>
         </div>
         {/each}
-        <br><br>
     </div>
+    <br><br>
     {:else}
     <h1>Sem eventos para hoje ({data.day})</h1>
     {/if}
