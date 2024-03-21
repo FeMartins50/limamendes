@@ -72,6 +72,7 @@
         background-color: rgba(20, 150, 220, 0.5);
     }
     .row {
+        max-width: 100%;
         margin: 4px 0;
     }
     .headerRow p {
@@ -83,12 +84,12 @@
         font-size: 16px;
     }
     .fiColumn {
-        width: 35%;
+        flex: 3;
     }
     .seColumn {
-        width: 35%;
+        flex: 1;
     }
     .thColumn {
-        width: 30%;
+        flex: 1;
     }
 </style>
