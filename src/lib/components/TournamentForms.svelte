@@ -76,11 +76,18 @@
                 pontos: ["-", "-"]
             }
         ],
-        final: {
-            atletas: ["-", "-"],
-            equipes: ["-", "-"],
-            pontos: ["-", "-"]
-        }
+        finais: [
+            {
+                atletas: ["-", "-"],
+                equipes: ["-", "-"],
+                pontos: ["-", "-"]
+            },
+            {
+                atletas: ["-", "-"],
+                equipes: ["-", "-"],
+                pontos: ["-", "-"]
+            }
+        ]
     }
 </script>
 
@@ -173,23 +180,45 @@
             <p class="subtitulo">Final</p>
             <div class="column">
                 <div class="confronto">
+                    <p class="finaltitle">Disputa de 1º Lugar</p>
                     <div class="oponente">
-                        <input class="atleta" type="text" name="1xatl0" placeholder="Atleta">
-                        <select class="ponto" name="1xesq0">
+                        <input class="atleta" type="text" name="1xatl0x0" placeholder="Atleta">
+                        <select class="ponto" name="1xesq0x0">
                             <option value="xvt">XVT</option>
                             <option value="thb">THB</option>
                             <option value="cvk">CVK</option>
                         </select>
-                        <input class="ponto" type="text" name="1xmk0" placeholder="Pontos">
+                        <input class="ponto" type="text" name="1xmk0x0" placeholder="Pontos">
                     </div>
                     <div class="oponente">
-                        <input class="atleta" type="text" name="1xatl1" placeholder="Atleta">
-                        <select class="ponto" name="1xesq1">
+                        <input class="atleta" type="text" name="1xatl0x1" placeholder="Atleta">
+                        <select class="ponto" name="1xesq0x1">
                             <option value="xvt">XVT</option>
                             <option value="thb">THB</option>
                             <option value="cvk">CVK</option>
                         </select>
-                        <input class="ponto" type="text" name="1xmk1" placeholder="Pontos">
+                        <input class="ponto" type="text" name="1xmk0x1" placeholder="Pontos">
+                    </div>
+                </div>
+                <div class="confronto">
+                    <p class="finaltitle">Disputa de 3º Lugar</p>
+                    <div class="oponente">
+                        <input class="atleta" type="text" name="1xatl1x0" placeholder="Atleta">
+                        <select class="ponto" name="1xesq1x0">
+                            <option value="xvt">XVT</option>
+                            <option value="thb">THB</option>
+                            <option value="cvk">CVK</option>
+                        </select>
+                        <input class="ponto" type="text" name="1xmk1x0" placeholder="Pontos">
+                    </div>
+                    <div class="oponente">
+                        <input class="atleta" type="text" name="1xatl1x1" placeholder="Atleta">
+                        <select class="ponto" name="1xesq1x1">
+                            <option value="xvt">XVT</option>
+                            <option value="thb">THB</option>
+                            <option value="cvk">CVK</option>
+                        </select>
+                        <input class="ponto" type="text" name="1xmk1x1" placeholder="Pontos">
                     </div>
                 </div>
             </div>
@@ -231,6 +260,9 @@
     .subtitulo {
         text-align: center;
         flex: 1;
+    }
+    .finaltitle {
+        font-size: 13px;
     }
     .column {
         flex: 25;

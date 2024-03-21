@@ -136,7 +136,7 @@ function createResult (data, type) {
                 oitavas: [],
                 quartas: [],
                 semi: [],
-                final: {}
+                finais: []
             };
             let atletas = [];
             let equipes = [];
@@ -209,7 +209,7 @@ function createResult (data, type) {
                     pontos.push(data.get('2xmk'+ i +'x0'));
                 }
 
-                if (data.get('2xatl'+ i +'x0') == "") {
+                if (data.get('2xatl'+ i +'x1') == "") {
                     atletas.push("-");
                     equipes.push("-");
                     pontos.push("-");
@@ -225,32 +225,35 @@ function createResult (data, type) {
                     pontos: pontos
                 });
             };
-            atletas = []; equipes = []; pontos = [];
-            if (data.get('1xatl0') == "") {
-                atletas.push("-");
-                equipes.push("-");
-                pontos.push("-");
-            } else {
-                atletas.push(data.get('1xatl0'));
-                equipes.push(data.get('1xesq0'));
-                pontos.push(data.get('1xmk0'));
-            }
+            for (let i = 0; i < 2; i++) {
+                atletas = []; equipes = []; pontos = [];
+                if (data.get('1xatl'+ i +'x0') == "") {
+                    atletas.push("-");
+                    equipes.push("-");
+                    pontos.push("-");
+                } else {
+                    atletas.push(data.get('1xatl'+ i +'x0'));
+                    equipes.push(data.get('1xesq'+ i +'x0'));
+                    pontos.push(data.get('1xmk'+ i +'x0'));
+                }
 
-            if (data.get('1xatl1') == "") {
-                atletas.push("-");
-                equipes.push("-");
-                pontos.push("-");
-            } else {
-                atletas.push(data.get('1xatl1'));
-                equipes.push(data.get('1xesq1'));
-                pontos.push(data.get('1xmk1'));
-            }
+                if (data.get('1xatl'+ i +'x1') == "") {
+                    atletas.push("-");
+                    equipes.push("-");
+                    pontos.push("-");
+                } else {
+                    atletas.push(data.get('1xatl'+ i +'x1'));
+                    equipes.push(data.get('1xesq'+ i +'x1'));
+                    pontos.push(data.get('1xmk'+ i +'x1'));
+                }
 
-            result.final = {
-                atletas: atletas,
-                equipes: equipes,
-                pontos: pontos
+                result.finais.push({
+                    atletas: atletas,
+                    equipes: equipes,
+                    pontos: pontos
+                });
             };
+            
             break;
         case "5":
             result = {

@@ -3,8 +3,8 @@
     export let result = {
         oitavas: [
             {
-                atletas: ["BISONHO", "-"],
-                equipes: ["cvk", "-"],
+                atletas: ["-", "-"],
+                equipes: ["-", "-"],
                 pontos: ["-", "-"]
             },
             {
@@ -77,11 +77,18 @@
                 pontos: ["-", "-"]
             }
         ],
-        final: {
-            atletas: ["-", "-"],
-            equipes: ["-", "-"],
-            pontos: ["-", "-"]
-        }
+        finais: [
+            {
+                atletas: ["-", "-"],
+                equipes: ["-", "-"],
+                pontos: ["-", "-"]
+            },
+            {
+                atletas: ["-", "-"],
+                equipes: ["-", "-"],
+                pontos: ["-", "-"]
+            }
+        ]
     }
 </script>
 
@@ -143,13 +150,25 @@
             <p class="subtitulo">Final</p>
             <div class="column">
                 <div class="confronto">
-                    <div class="oponente {result.final.equipes[0]}">
-                        <p class="atleta">{result.final.atletas[0]}</p>
-                        <p class="ponto">{result.final.pontos[0]}</p>
+                    <p class="finaltitle">Disputa de 1º Lugar</p>
+                    <div class="oponente {result.finais[0].equipes[0]}">
+                        <p class="atleta">{result.finais[0].atletas[0]}</p>
+                        <p class="ponto">{result.finais[0].pontos[0]}</p>
                     </div>
-                    <div class="oponente {result.final.equipes[1]}">
-                        <p class="atleta">{result.final.atletas[1]}</p>
-                        <p class="ponto">{result.final.pontos[1]}</p>
+                    <div class="oponente {result.finais[0].equipes[1]}">
+                        <p class="atleta">{result.finais[0].atletas[1]}</p>
+                        <p class="ponto">{result.finais[0].pontos[1]}</p>
+                    </div>
+                </div>
+                <div class="confronto">
+                    <p class="finaltitle">Disputa de 3º Lugar</p>
+                    <div class="oponente {result.finais[1].equipes[0]}">
+                        <p class="atleta">{result.finais[1].atletas[0]}</p>
+                        <p class="ponto">{result.finais[1].pontos[0]}</p>
+                    </div>
+                    <div class="oponente {result.finais[1].equipes[1]}">
+                        <p class="atleta">{result.finais[1].atletas[1]}</p>
+                        <p class="ponto">{result.finais[1].pontos[1]}</p>
                     </div>
                 </div>
             </div>
@@ -189,6 +208,9 @@
     .subtitulo {
         text-align: center;
         flex: 1;
+    }
+    .finaltitle {
+        font-size: 13px;
     }
     .column {
         flex: 25;
