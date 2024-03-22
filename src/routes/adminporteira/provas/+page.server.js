@@ -65,7 +65,7 @@ function createResult (data, type) {
             };
             break;
         case "1":
-            let label, marca, marcas = [];
+            let label, marcas = [];
             result = {
                labels: [],
                marks: [] 
