@@ -39,9 +39,9 @@
     const resultadoParcial = [
         {
             modalidade: "Natação",
-            xvt: "-",
-            thb: "-",
-            cvk: "-" 
+            xvt: '<strong style="color:#cd7f32">Bronze</strong>',
+            thb: '<strong style="color:#c0c0c0">Prata</strong>',
+            cvk: '<strong style="color:#ffd700">Ouro</strong>' 
         },
         {
             modalidade: "Triatlo",
@@ -51,15 +51,15 @@
         },
         {
             modalidade: "Atletismo",
-            xvt: "-",
-            thb: "-",
-            cvk: "-"
+            xvt: '<strong style="color:#cd7f32">Bronze</strong>',
+            thb: '<strong style="color:#c0c0c0">Prata</strong>',
+            cvk: '<strong style="color:#ffd700">Ouro</strong>' 
         },
         {
             modalidade: "Esgrima",
-            xvt: "-",
-            thb: "-",
-            cvk: "-"
+            xvt: '<strong style="color:#cd7f32">Bronze</strong>',
+            thb: '<strong style="color:#c0c0c0">Prata</strong>',
+            cvk: '<strong style="color:#ffd700">Ouro</strong>' 
         },
         {
             modalidade: "Futebol",
@@ -141,17 +141,17 @@
         {#each resultadoParcial as result}
         <div class="row">
             <p class="col1">{result.modalidade}</p>
-            <p class="col2">{result.xvt}</p>
-            <p class="col3">{result.thb}</p>
-            <p class="col4">{result.cvk}</p>
+            <p class="col2">{@html result.xvt}</p>
+            <p class="col3">{@html result.thb}</p>
+            <p class="col4">{@html result.cvk}</p>
         </div>
         {/each}
         <hr>
         <div class="footer row">
             <p class="col1">Total</p>
-            <p class="col2">-</p>
-            <p class="col3">-</p>
-            <p class="col4">-</p>
+            <p class="col2" style="color: #cd7f32">3</p>
+            <p class="col3" style="color: #c0c0c0">6</p>
+            <p class="col4" style="color: #ffd700">12</p>
         </div>
     </div>
 </section>
