@@ -99,9 +99,9 @@
         },
         {
             modalidade: "Tiro",
-            xvt: "-",
-            thb: "-",
-            cvk: "-"
+            xvt: '<strong style="color:#cd7f32">Bronze</strong>',
+            thb: '<strong style="color:#c0c0c0">Prata</strong>',
+            cvk: '<strong style="color:#ffd700">Ouro</strong>'
         },
         {
             modalidade: "Biatlo",
@@ -117,9 +117,9 @@
         },
         {
             modalidade: "Corrida Rústica",
-            xvt: "-",
-            thb: "-",
-            cvk: "-"
+            xvt: '<strong style="color:#cd7f32">Bronze</strong>',
+            thb: '<strong style="color:#c0c0c0">Prata</strong>',
+            cvk: '<strong style="color:#ffd700">Ouro</strong>'
         }
     ];
 </script>
@@ -149,9 +149,9 @@
         <hr>
         <div class="footer row">
             <p class="col1">Total</p>
-            <p class="col2" style="color: #cd7f32">3</p>
-            <p class="col3" style="color: #c0c0c0">6</p>
-            <p class="col4" style="color: #ffd700">12</p>
+            <p class="col2" style="color: #cd7f32">5</p>
+            <p class="col3" style="color: #c0c0c0">10</p>
+            <p class="col4" style="color: #ffd700">20</p>
         </div>
     </div>
 </section>
