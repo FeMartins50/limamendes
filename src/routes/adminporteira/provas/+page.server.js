@@ -52,7 +52,7 @@ function createResult (data, type) {
                 atleta = data.get('atl' + i);
                 equipe = data.get('esq' + i);
                 marca = data.get('mk' + i);
-                if (atleta == "") {
+                if (atleta == "" || atleta == "-") {
                     atleta = "-";
                     equipe = "-";
                     marca = "-";
@@ -83,7 +83,7 @@ function createResult (data, type) {
                     marca = data.get('mk' + i + 'x' + j)
                     marcas.push((marca == "" ? "-" : marca));
                 }
-                if (atleta == "") {
+                if (atleta == "" || atleta == "-") {
                     atleta = "-";
                     equipe = "-";
                 };
@@ -102,7 +102,7 @@ function createResult (data, type) {
             for (let i = 0; i < 9; i++) {
                 atleta = data.get('atl' + i);
                 equipe = data.get('esq' + i);
-                if (atleta == "") {
+                if (atleta == "" || atleta == "-") {
                     break;
                 }
                 result.atletas.push({
