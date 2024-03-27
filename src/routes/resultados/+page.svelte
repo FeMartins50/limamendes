@@ -75,27 +75,27 @@
         },
         {
             modalidade: "Vôlei",
-            xvt: "-",
-            thb: "-",
-            cvk: "-"
+            xvt: '<strong style="color:#cd7f32">Bronze</strong>',
+            thb: '<strong style="color:#ffd700">Ouro</strong>',
+            cvk: '<strong style="color:#c0c0c0">Prata</strong>'
         },
         {
             modalidade: "Judô",
-            xvt: "-",
-            thb: "-",
-            cvk: "-"
+            xvt: '<strong style="color:#cd7f32">Bronze</strong>',
+            thb: '<strong style="color:#ffd700">Ouro</strong>',
+            cvk: '<strong style="color:#c0c0c0">Prata</strong>'
         },
         {
             modalidade: "Orientação",
-            xvt: "-",
-            thb: "-",
-            cvk: "-"
+            xvt: '<strong style="color:#cd7f32">Bronze</strong>',
+            thb: '<strong style="color:#c0c0c0">Prata</strong>',
+            cvk: '<strong style="color:#ffd700">Ouro</strong>'
         },
         {
             modalidade: "Xadrez",
-            xvt: "-",
-            thb: "-",
-            cvk: "-"
+            xvt: '<strong style="color:#ffd700">Ouro</strong>',
+            thb: '<strong style="color:#cd7f32">Bronze</strong>',
+            cvk: '<strong style="color:#c0c0c0">Prata</strong>'
         },
         {
             modalidade: "Tiro",
@@ -105,9 +105,9 @@
         },
         {
             modalidade: "Biatlo",
-            xvt: "-",
-            thb: "-",
-            cvk: "-"
+            xvt: '<strong style="color:#cd7f32">Bronze</strong>',
+            thb: '<strong style="color:#c0c0c0">Prata</strong>',
+            cvk: '<strong style="color:#ffd700">Ouro</strong>'
         },
         {
             modalidade: "Cabo de Guerra",
@@ -149,9 +149,9 @@
         <hr>
         <div class="footer row">
             <p class="col1">Total</p>
-            <p class="col2" style="color: #cd7f32">6</p>
-            <p class="col3" style="color: #c0c0c0">12</p>
-            <p class="col4" style="color: #ffd700">24</p>
+            <p class="col2" style="color: #cd7f32">12</p>
+            <p class="col3" style="color: #c0c0c0">21</p>
+            <p class="col4" style="color: #ffd700">30</p>
         </div>
     </div>
 </section>
