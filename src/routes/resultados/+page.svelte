@@ -45,9 +45,9 @@
         },
         {
             modalidade: "Triatlo",
-            xvt: "-",
-            thb: "-",
-            cvk: "-"
+            xvt: '<strong style="color:#cd7f32">Bronze</strong>',
+            thb: '<strong style="color:#c0c0c0">Prata</strong>',
+            cvk: '<strong style="color:#ffd700">Ouro</strong>' 
         },
         {
             modalidade: "Atletismo",
@@ -63,9 +63,9 @@
         },
         {
             modalidade: "Futebol",
-            xvt: "-",
-            thb: "-",
-            cvk: "-"
+            xvt: '<strong style="color:#c0c0c0">Prata</strong>',
+            thb: '<strong style="color:#cd7f32">Bronze</strong>',
+            cvk: '<strong style="color:#ffd700">Ouro</strong>'
         },
         {
             modalidade: "Basquete",
@@ -111,9 +111,9 @@
         },
         {
             modalidade: "Cabo de Guerra",
-            xvt: "-",
-            thb: "-",
-            cvk: "-"
+            xvt: '<strong style="color:#c0c0c0">Prata</strong>',
+            thb: '<strong style="color:#cd7f32">Bronze</strong>',
+            cvk: '<strong style="color:#ffd700">Ouro</strong>'
         },
         {
             modalidade: "Corrida Rústica",
@@ -149,9 +149,9 @@
         <hr>
         <div class="footer row">
             <p class="col1">Total</p>
-            <p class="col2" style="color: #cd7f32">12</p>
-            <p class="col3" style="color: #c0c0c0">21</p>
-            <p class="col4" style="color: #ffd700">30</p>
+            <p class="col2" style="color: #cd7f32">15</p>
+            <p class="col3" style="color: #c0c0c0">24</p>
+            <p class="col4" style="color: #ffd700">38</p>
         </div>
     </div>
 </section>
